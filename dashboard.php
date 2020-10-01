@@ -13,10 +13,10 @@ $select_books = mysqli_query($connection, $query);
             <th>Role</th>
             <th>Book Title</th>
             <th>Department</th>
-            <!--<th>Book Image</th>
+            <th>Book Image</th>
             <th>Author Name</th>
             <th>Edition</th>
-            <th>Semester</th>
+           <!-- <th>Semester</th>
             <th>Date</th> -->
             <th>Confirm</th>
         </tr>
@@ -34,9 +34,9 @@ $select_books = mysqli_query($connection, $query);
         $book_b_id = $row ['b_id'];
         $book_title = $row ['Book_Title'];
         $book_department = $row ['Department'];
-        // $book_image = $row ['Book_Image'];
-        // $book_author = $row ['Author_Name'];
-        // $book_edition = $row ['Edition'];
+        $book_image = $row ['Book_Image'];
+        $book_author = $row ['Author_Name'];
+        $book_edition = $row ['Edition'];
         // $book_semester = $row ['Semester'];
         // $book_date = $row ['Added_On'];
 
@@ -46,9 +46,9 @@ $select_books = mysqli_query($connection, $query);
         echo "<td>{$book_role}</td>";
         echo "<td>{$book_title}</td>";
         echo "<td>{$book_department}</td>";
-        // echo "<td><img width=100 class='img-resoponsive' src='image/{$book_image}' alt='image'></img></td>";
-        // echo "<td>{$book_author}</td>";
-        // echo "<td>{$book_edition}</td>";
+        echo "<td><img width=100 class='img-resoponsive' src='image/{$book_image}' alt='image'></img></td>";
+        echo "<td>{$book_author}</td>";
+        echo "<td>{$book_edition}</td>";
         // echo "<td>{$book_semester}</td>";
         // echo "<td>{$book_date}</td>";
         echo "<td><a href='dashboard.php?delete={$book_id}'>Confirm</a></td>";
@@ -88,11 +88,11 @@ $select_access = mysqli_query($connection, $query);
             <th>Contact Number</th>
             <th>Role</th>
             <th>Tool Name</th>
-            <!--<th>Department</th>
+            <th>Department</th>
             <th>Book Image</th>
             <th>Author Name</th>
             <th>Edition</th>
-            <th>Semester</th>
+           <!-- <th>Semester</th>
             <th>Date</th> -->
             <th>Confirm</th>
         </tr>
@@ -108,10 +108,10 @@ $select_access = mysqli_query($connection, $query);
         $access_cno = $row ['acno'];
         $access_role = $row ['arole'];
         $access_toolname = $row ['toolname'];
-        //$book_department = $row ['Department'];
-        // $book_image = $row ['Book_Image'];
-        // $book_author = $row ['Author_Name'];
-        // $book_edition = $row ['Edition'];
+        $book_department = $row ['Department'];
+        $book_image = $row ['Book_Image'];
+        $book_author = $row ['Author_Name'];
+        $book_edition = $row ['Edition'];
         // $book_semester = $row ['Semester'];
         // $book_date = $row ['Added_On'];
 
@@ -120,10 +120,10 @@ $select_access = mysqli_query($connection, $query);
         echo "<td>{$access_cno}</td>";
         echo "<td>{$access_role}</td>";
         echo "<td>{$access_toolname}</td>";
-        // echo "<td>{$book_department}</td>";
-        // echo "<td><img width=100 class='img-resoponsive' src='image/{$book_image}' alt='image'></img></td>";
-        // echo "<td>{$book_author}</td>";
-        // echo "<td>{$book_edition}</td>";
+        echo "<td>{$book_department}</td>";
+        echo "<td><img width=100 class='img-resoponsive' src='image/{$book_image}' alt='image'></img></td>";
+        echo "<td>{$book_author}</td>";
+        echo "<td>{$book_edition}</td>";
         // echo "<td>{$book_semester}</td>";
         // echo "<td>{$book_date}</td>";
         echo "<td><a href='dashboard.php?delete={$access_id}'>Confirm</a></td>";
