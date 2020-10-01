@@ -1,6 +1,7 @@
 <?php include "includes/head_user.php"; ?>
 <!DOCTYPE html>
 <html>
+	<!-- Page for all branch and semester-->
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
