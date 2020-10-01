@@ -1,10 +1,10 @@
 .navigation{
-	background-color: black;
-	font-size:20px;
+	background-color: white;
+	font-size:40px;
 }
 /*slider*/
 /*.img1{
-	border-radius: 50px;
+	border-radius: 60px;
 }*/
 
 .img1:hover{
@@ -36,7 +36,7 @@ h2{
 
 /*intro about*/
 .introabout{
-	color: red;
+	color:yellow;
 	/* height: 100%; */
 
 	background-image:url(image/book3.svg);
@@ -68,5 +68,5 @@ h4{
 
 
 
-	background-color: black;
+	background-color: white;
 }
