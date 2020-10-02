@@ -4,7 +4,7 @@ session_start();
 if(isset($_SESSION['email']))
 {
   $email = $_SESSION['email'];
-$query = "SELECT * FROM authenticate WHERE email = '$email' ";
+$query = "SELECT * FROM authenticate WHERE email = '$email' ";//Checking Email id
 $select_profile_query = mysqli_query($connection, $query);
 
 while($row = mysqli_fetch_array($select_profile_query))
@@ -22,7 +22,7 @@ if(isset($_POST['Login']))
  $eno = $_POST['eno'];
 
 
-  $update_query= " UPDATE authenticate SET cno = $cno, eno = $eno WHERE email ='$user_email' ";
+  $update_query= " UPDATE authenticate SET cno = $cno, eno = $eno WHERE email ='$user_email' ";//Updating cno & eno
 
   $update_profile_query= mysqli_query($connection,$update_query);
 
