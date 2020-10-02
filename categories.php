@@ -14,7 +14,7 @@
 
 	<title>Book Sharing System</title>
 	<style>
-        html {scroll-behavior: smooth;}
+        html {scroll-behavior: sdate;}
 
 	</style>
 	</head>
@@ -73,7 +73,7 @@
     </div>
     <div>
     			<!--books navbar-->
-
+<div class="container_fluid">
     	<nav class="navbar  navbar-tab navbar-expand-sm navbar-light bg-light">
       <a class="navbar-brand" href="view_all_accessories.php">Accessories</a> <!-- view items -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -121,9 +121,9 @@
               CIVIL
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item dropmenu" href="#">1st sem</a>
-              <a class="dropdown-item dropmenu" href="#">2nd sem</a>
-              <a class="dropdown-item dropmenu" href="#">3rd sem</a>
+              <a class="dropdown-item dropmenu" href="1stsem.php">1st sem</a>
+              <a class="dropdown-item dropmenu" href="2ndsem.php">2nd sem</a>
+              <a class="dropdown-item dropmenu" href="3rdsem.php">3rd sem</a>
                <a class="dropdown-item dropmenu" href="#">4th sem</a>
               <a class="dropdown-item dropmenu" href="#">5th sem</a>
               <a class="dropdown-item dropmenu" href="#">6th sem</a>
