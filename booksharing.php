@@ -281,11 +281,11 @@
         $feedback_number = $_POST['cono'];
         $feedback_email = $_POST['email'];
         $feedback_query = $_POST['query'];
-
+	// Feedback form query
         $add_query = " INSERT INTO feedback(name, cono, email, query) VALUES('$feedback_name', $feedback_number, '$feedback_email', '$feedback_query') ";
 
         $add_feedback = mysqli_query($connection, $add_query);
-
+	// Checking for query submmited or not
         if(!$add_feedback)
         {
           die("error!" + mysqli_error($connection));
