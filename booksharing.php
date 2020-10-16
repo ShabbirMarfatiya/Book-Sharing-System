@@ -288,10 +288,10 @@
 	// Checking for query submmited or not
         if(!$add_feedback)
         {
-          die("error!" + mysqli_error($connection));
+          die("error!" + mysqli_error($connection));//checks for error
         }
         else {
-          echo "<h4>Query Submitted!</h4>";
+          echo "<h4>Query Submitted!</h4>";//Query Submitted
           header("Location: booksharing.php#contact");
         }
       }
